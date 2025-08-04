@@ -1,0 +1,287 @@
+.PaltanTVBanner {
+  background: url('./Tvbg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  max-width: 100%;
+}
+
+.PaltanTVBanner .PaltanTVContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+}
+
+.PaltanTVContainer .bannerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58.33%;
+}
+
+
+.PaltanTVContainer .bannerLeft .left {
+  position: relative;
+}
+
+.LeftContent img {
+  margin: o auto;
+  width: 100%;
+  height: auto;
+}
+
+.left .LeftContent .content h1 {
+  font-family: 'Love-nature';
+  color: white;
+  font-size: 120px;
+  top: 28%;
+  letter-spacing: 13px;
+  position: absolute;
+  left: 50.5%;
+  transform: translateX(-50%);
+  text-shadow: -2px 0 24px #000;
+  text-align: center;
+}
+
+.PaltanTVContainer .bannerRight {
+  width: 33.33%;
+}
+
+.bannerRight .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerRight .RightContent {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bannerLeft .left .LeftContent .content img {
+  position: relative;
+  top: 35px;
+}
+
+.seasons {
+  padding: 80px 0;
+}
+
+.seasons ul li {
+  background-color: #f40;
+  transition: all .5s ease-in;
+  letter-spacing: 3px;
+  padding: 15px 20px;
+  transform: skew(-15deg);
+  color: white;
+  font-size: 18px;
+  font-family: "Exo", serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.SeasonContiner .SeasonContent {
+  max-width: 1170px;
+}
+
+.titles h3 {
+  background-color: #f40;
+  position: relative;
+  padding: 7px 50px;
+  margin-left: -12px;
+  width: 90%;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  display: -webkit-box;
+  line-height: 1.3;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  height: 3em;
+  transform: skew(-15deg);
+  letter-spacing: 3px;
+}
+
+.titles h3::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  right: 6px;
+  top: 0;
+  width: 10px;
+  height: 54px !important;
+  box-shadow: -20px 0 0 0 #fff;
+}
+
+.titles h3::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 22px;
+  height: 54px !important;
+  transform: skew(15deg);
+}
+
+.seasonContentBox {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.PlayBtn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.videoModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -25px;
+  right: 5px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.closeButton:hover {
+  color: #cc0000;
+}
+
+.seasonContentBox .titles {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.modalContent iframe {
+  width: 100%;
+  height:450px;
+}
+
+
+@media screen and (max-width:992px) {
+  .seasonContentBox .img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:481px) {
+  .titles h3 {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 30px;
+  }
+
+  .modalContent iframe {
+    width: 100% !important;
+    height:200px !important;
+  }
+}
+
+
+@media screen and (min-width:767px) and (max-width:991px) {
+  .PaltanTVBanner .PaltanTVContainer {
+    height: 700px;
+  }
+
+  .left .LeftContent .content h1 {
+    top: 19%;
+    right: -300px;
+  }
+
+  .SeasonContiner .SeasonContent {
+    max-width: 770px;
+  }
+
+  .PaltanTVContainer .bannerLeft {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bannerLeft .left .LeftContent .content img {
+    position: relative;
+    top: 0px;
+  }
+
+  .PaltanTVContainer .bannerLeft .left {
+    margin-left: 0%;
+  }
+
+  .LeftContent .content img {
+    width: 100%;
+  }
+
+  .bannerRight {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .PaltanTVBanner {
+    background: url('./TvbgRe1.jpg');
+    height: 600px;
+    background-position: center;
+  }
+
+  .modalContent iframe {
+    width: 100%;
+    height:380px;
+  }
+
+  .bannerRight,
+  .bannerLeft .left .LeftContent .content img,
+  .playerAnime {
+    display: none;
+  }
+
+  .seasons {
+    padding: 40px 0;
+  }
+
+  .seasonContentBox .titles {
+    margin-bottom: 10px;
+  }
+
+  .titles h3 {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Container {
+  padding: 80px 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ContentContainer {
+  display: flex;
+  padding: 0 -15px;
+}
+
+.ContentContainer .title {
+  padding-left: 4%;
+}
+
+.ContentContainer .title h2 {
+  font-size: 90px !important;
+  text-align: center;
+  margin-left: -15%;
+  margin-bottom: -15px;
+  letter-spacing: 7px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff7500;
+}
+
+/* Coro */
+
+.SliderSection {
+  position: relative;
+  padding-top: 80px;
+}
+
+.SliderSection .ContentContainer {
+  overflow: hidden;
+}
+
+.SliderSection .ContentContainer .Title .outerTi {
+  display: table;
+  height: 65vh;
+  width: 100%;
+}
+
+.SliderSection .ContentContainer .Title .outerTi .InnerTi {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.SliderSection .ContentContainer .Title .outerTi .InnerTi h2 {
+  font-size: 90px !important;
+  text-align: center;
+  margin-left: -15px !important;
+  margin-bottom: -15px !important;
+  text-shadow: 0 0 0 rgba(7, 11, 13, 0.58), 0 0 5px rgba(6, 10, 11, 0.57);
+  letter-spacing: 4px;
+  margin: 0;
+  color: #ff7500;
+  font-family: 'Love-nature';
+}
+
+.SliderSection .ContentContainer .sliderContainer {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 620px !important;
+  /* overflow: hidden; */
+}
+
+.SliderSection .ContentContainer .sliderContainer .SilkList {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.SilkCon {
+  width: 100%;
+}
+
+.SilkList .playerDetails {
+  padding-left: 10px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  width: 340px;
+}
+
+.SilkList .playerDetails .div {
+  position: relative;
+}
+
+.playerDetails .div .playerimg {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  height: auto;
+  transform: scale(0.9);
+  transition: all 900ms ease-in;
+}
+
+.playerimg img {
+  transition: all 900ms ease-in;
+}
+
+.playerDetails .div .PlayerName {
+  position: relative;
+  margin-top: -95px;
+  z-index: 99;
+}
+
+.PlayerName .FName {
+  font-family: 'exo';
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.PlayerName .SName {
+  font-family: 'exo';
+  color: white;
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.PlayerName .Position {
+  opacity: 0;
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: .82rem 0 .656rem 0;
+}
+
+.SliderSection .ContentContainer .sliderContainer .pre {
+  position: absolute;
+  z-index: 0 !important;
+  right: 90px;
+  bottom: 12%;
+  background-color: #ddd;
+  border-radius: 25px;
+  height: 35px;
+  width: 45px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.SliderSection .ContentContainer .sliderContainer .next {
+  position: absolute;
+  right: 10px;
+  bottom: 12%;
+  background-color: #ddd;
+  border-radius: 25px;
+  height: 35px;
+  width: 45px;
+  z-index: 999;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knowMoreBtn {
+  position: absolute;
+  bottom: 35%;
+  left: 3%;
+  z-index: 99;
+}
+
+.knowMoreBtn button {
+  padding: 8px 30px;
+  width: 280px;
+  font-size: 20px;
+  color: white;
+  font-family: "Exo";
+  font-weight: 500;
+  position: relative;
+  z-index: 999;
+  background-image: linear-gradient(to right, #df3100 0, #ff7500 25%, white 50%, #ff7500 75%, #df3100 100%);
+  letter-spacing: 3px;
+  background-size: 250%;
+  transition: all .4s ease-in-out;
+  letter-spacing: 3px;
+  transform: skew(-15deg);
+  left: 52%;
+}
+
+.knowMoreBtn button:hover {
+  background-position: 100% 0;
+}
+
+.activeSlide .playerDetails {
+  height: 520px;
+}
+
+.activeSlide .playerDetails .div .PlayerName {
+  position: relative;
+  top: 70px;
+}
+
+.activeSlide .playerDetails .div .PlayerName .FName {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.activeSlide .playerDetails .div .PlayerName .SName {
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.activeSlide .playerDetails .div .Position {
+  opacity: 1;
+  margin-bottom: 0;
+  margin-top: 1px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+  font-weight: 400;
+}
+
+.activeSlide .playerDetails .div .Position {
+  font-family: "Exo";
+  color: #ff7500;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: all .8s ease-in;
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1224px) {
+  .SliderSection .ContentContainer .Title .outerTi .InnerTi h2 {
+    font-size: 60px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 992px) {
+  .SliderSection .ContentContainer .SpecificW {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .SliderSection .ContentContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .knowMoreBtn {
+    bottom: 24%;
+  }
+
+  .knowMoreBtn button {
+    left: 4%;
+  }
+
+  .activeSlide .playerDetails {
+    height: auto;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer {
+    height: 700px !important;
+  }
+
+  .SilkList .playerDetails {
+    padding-left: 10px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    width: 400px;
+  }
+
+  .SliderSection .ContentContainer .Title {
+    height: 100px;
+    width: 100%;
+  }
+
+  .SliderSection .ContentContainer .Title .outerTi,
+  .SliderSection .ContentContainer .Title .outerTi .InnerTi {
+    height: 100%;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer .pre,
+  .SliderSection .ContentContainer .sliderContainer .next {
+    bottom: 6%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .knowMoreBtn {
+        bottom: 32%;
+    }
+  }
+@media screen and (max-width:767px) {
+  .knowMoreBtn {
+    bottom: 37%;
+  }
+}
+
+@media screen and (max-width:768px) {
+.activeSlide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .SliderSection .ContentContainer .Title .outerTi .InnerTi h2 {
+    font-size: 45px !important;
+  }
+
+  .knowMoreBtn button {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width:576px) {
+  .SilkList .playerDetails {
+    width: 100%;
+  }
+
+  .playerimg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .playerimg img {
+    width: 90%;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer {
+    height: 800px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .knowMoreBtn button {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .SilkList .playerDetails {
+    width: 100%;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer .pre,
+  .SliderSection .ContentContainer .sliderContainer .next {
+    bottom: 15%;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer .pre {
+    right: 200px;
+  }
+
+  .SliderSection .ContentContainer .sliderContainer .next {
+    right: 110px;
+  }
+
+    .knowMoreBtn {
+      left: 24%;
+    }
+  .SliderSection .ContentContainer .sliderContainer {
+    height: 760px !important;
+  }
+}
+
+
+

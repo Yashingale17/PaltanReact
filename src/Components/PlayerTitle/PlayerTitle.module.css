@@ -1,0 +1,66 @@
+.PlayerTitle {
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+
+.PlayerTitle h3 {
+  background-color: #f40;
+  position: relative;
+  padding: 18px 30px;
+  margin-left: -12px;
+  width: 550px;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 3px;
+  transform: skew(-15deg);
+}
+
+.PlayerTitle h3::before {
+  content: '';
+  background-color: #f40;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.PlayerTitle h3::after {
+  content: '';
+  background-color: #f40;
+  position: absolute;
+  right: -36px;
+  top: 0;
+  width: 7px;
+  height: 100%;
+}
+
+
+@media Screen and (max-width:767px) {
+  .PlayerTitle h3 {
+    width: 500px;
+  }
+
+  .PlayerTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Raiders {
+    justify-content: center;
+  }
+}
+
+@media Screen and (max-width:600px) {
+  .PlayerTitle h3 {
+    width: 400px;
+  }
+}
+
+@media Screen and (max-width:460px) {
+  .PlayerTitle h3 {
+    width: 290px;
+  }
+}

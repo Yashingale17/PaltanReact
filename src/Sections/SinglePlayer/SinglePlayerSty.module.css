@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.MainContainer .SinglePlayerBanner {
+  width: 100%;
+}
+
+.MainContainer .SinglePlayerBanner .bannerS {
+  display: none;
+}
+
+.MainContainer .PlayerDetails {
+  background-image: url('./SPSection2.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  overflow: hidden;
+}
+
+.PlayerDetails .DetailContainer {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.DetailContainer .playerImage {
+  width: 33.33%;
+}
+
+.DetailContainer .PlayerD {
+  width: 58.33%;
+  margin-left: 8.33333333%;
+}
+
+.PlayerD .Top {
+  display: flex;
+  gap: 90px;
+}
+
+.PlayerD .detailBorder {
+  margin-top: 40px;
+  border-bottom: 1px solid #c7c1c1;
+  padding-bottom: 50px;
+  max-width: 100%;
+}
+
+.PlayerD .Vitals {
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: auto;
+}
+
+td {
+  padding: 15px 5px;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+table tbody tr .title {
+  color: #959595;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+table tbody tr .detail {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.StatsCon h2 {
+  font-size: 110px !important;
+  font-weight: 800;
+  margin: 0;
+  color: #ff7500;
+  text-align: center;
+  font-family: "Roboto Mono", serif;
+  text-transform: uppercase;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ff7500;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 767px) {
+  .StatsCon h2 {
+    font-size: 45px !important;
+  }
+}
+
+.OverFall,
+.Raid {
+  background-color: #edeef2;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  overflow: hidden;
+}
+
+.Tackle {
+  background-color: #edeef2 !important;
+}
+
+.Raid {
+  background-color: white;
+}
+
+.Raid .RaidCenter {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 50%;
+  border-right: 1px solid #a5a5a5;
+}
+
+.Raid .RaidRight {
+  width: 50%;
+  display: flex;
+}
+
+.Raid .CircleRight {
+  display: flex;
+  width: 100%;
+}
+
+.Raid .RaidRight .rightCircle,
+.Raid .RaidRight .rightLeft {
+  width: 50%;
+}
+
+.CircularProgress {
+  background: linear-gradient(90deg, #ff7500 50%, transparent 50%, transparent), linear-gradient(180deg, #ff7500 50%, #ff7500 50%, #ff7500);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  height: 230px;
+  margin: 2em auto;
+  position: relative;
+  width: 230px;
+  transition: all .3s linear;
+}
+
+.CircularProgressT {
+  background: linear-gradient(90deg, #ff7500 50%, transparent 50%, transparent), linear-gradient(245deg, #121237 50%, #ff7500 50%, #ff7500);
+}
+
+.CircularProgress::before {
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+  content: "";
+  font-size: 32px;
+  font-weight: bold;
+  height: 80%;
+  left: 50%;
+  line-height: 1.4;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.CircularProgress .circleTxt {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CircularProgress .circleTxt span {
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+
+.rightLeft .rightleftOuter {
+  display: table;
+  height: 270px;
+  width: 100%;
+}
+
+.rightLeft .rightleftInner {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.rightLeft .rightleftOuter .rightleftInner h6 {
+  color: #000;
+  font-size: 40px;
+  box-shadow: 1px 1px 20px #e8e8e8;
+  margin: .5rem 0 .4rem 0;
+  width: 50%;
+  text-align: center;
+  transform: skew(-10deg);
+}
+
+.rightLeft .rightleftOuter .rightleftInnerT h6 {
+  background-color: white;
+}
+
+.rightLeft .rightleftOuter .rightleftInner p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.Raid .RaidCenter .overFallinfo {
+  width: 50%;
+}
+
+.Raid .RaidCenter .overFallinfo h4 {
+  background-color: #edeef2;
+}
+
+.Raid .RaidCenter .overFallinfoT h4 {
+  background-color: white;
+}
+
+.PlayerTitle h3 {
+  background-color: #f40;
+  position: relative;
+  padding: 18px 30px;
+  margin-left: -12px;
+  width: 550px;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 3px;
+  transform: skew(-15deg);
+}
+
+.PlayerTitle h3::before {
+  content: '';
+  background-color: #f40;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.PlayerTitle h3::after {
+  content: '';
+  background-color: #f40;
+  position: absolute;
+  right: -36px;
+  top: 0;
+  width: 7px;
+  height: 100%;
+}
+
+.OverFall .overFallinfo {
+  width: 16.66666667%;
+}
+
+.overFallinfo h4 {
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  width: 150px;
+  margin: 30px auto 0;
+  padding: 10px 0;
+  font-size: 40px;
+}
+
+.overFallinfo h5 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: .82rem 0 .656rem 0;
+}
+
+.MainContainer .otherPlayers {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.otherPlayers .OtherPlayerHead h2 {
+  font-family: "Love-Nature";
+    font-size: 102px !important;
+    letter-spacing: 7px;
+    margin: 0;
+  text-align: center;
+  line-height: 1;
+  color: #ff7500;
+  background: linear-gradient(#ff7500, #ff7500, #ff7500, rgba(50, 50, 50, 0.71));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+
+@media Screen and (max-width:767px) {
+  .PlayerTitle h3 {
+    width: 500px;
+  }
+
+  .Raiders {
+    justify-content: center;
+  }
+}
+
+@media Screen and (max-width:600px) {
+  .PlayerTitle h3 {
+    width: 400px;
+  }
+}
+
+@media Screen and (max-width:460px) {
+  .PlayerTitle h3 {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .MainContainer .SinglePlayerBanner .bannerS {
+    display: block;
+  }
+
+  .MainContainer .SinglePlayerBanner .bannerF {
+    display: none;
+  }
+
+  .DetailContainer .playerImage img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .MainContainer .PlayerDetails .DetailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .DetailContainer .playerImage {
+    width: 100%;
+    margin: auto;
+  }
+
+  .DetailContainer .playerImage img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .DetailContainer .PlayerD {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .PlayerD .Top {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .PlayerD .detailBorder {
+    margin-top: 0px;
+  }
+
+  .Raid .CircleRight {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .Raid .RaidCenter,
+  .Raid .RaidRight {
+    flex-direction: column;
+    border: none;
+    width: 100%;
+  }
+
+  .Raid .RaidCenter .overFallinfo,
+  .Raid .RaidRight .rightCircle,
+  .Raid .RaidRight .rightLeft {
+    width: 100%;
+  }
+
+  .Raid .RaidRight .rightLeft {
+    text-align: center;
+  }
+
+  .rightLeft .rightleftOuter .rightleftInner h6 {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .rightLeft .rightleftOuter .rightleftInner h6 {
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .OverFall {
+    display: block;
+  }
+
+  .Raid {
+    display: block;
+  }
+}
+
+@media screen and (min-width:991px) and (max-width:1199px) {
+  .OverFall .overFallinfo {
+    display: inline-block;
+  }
+
+  .Raid {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .Raid .RaidCenter,
+  .Raid .RaidRight {
+    width: 100%;
+  }
+
+  .Raid .CircleRight {
+    display: flex;
+  }
+
+  .StatsCon h2 {
+    font-size: 80px !important;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .OverFall .overFallinfo {
+    width: 100%;
+  }
+}

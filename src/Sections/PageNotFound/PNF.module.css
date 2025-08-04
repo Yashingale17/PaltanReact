@@ -1,0 +1,37 @@
+/* src/components/PNF.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 72px;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}

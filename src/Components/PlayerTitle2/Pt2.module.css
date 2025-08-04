@@ -1,0 +1,23 @@
+.PlayerTitle h3 {
+  background-color: #f40;
+  position: relative;
+  padding: 18px 30px;
+  margin-left: -12px;
+  width: 550px;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 3px;
+  transform: skew(-15deg);
+}
+
+.PlayerTitle h3::before {
+  content: '';
+  background-color: #f40;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+}

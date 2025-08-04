@@ -1,0 +1,130 @@
+.playersSection {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.overLay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(241, 241, 241);
+  margin-top: -110px;
+  z-index: -1;
+}
+
+.RaiderSection .RaidersContainer .Raiders , .DefenderSection .DefenderContainer .Defender , .AllSection .AllContainer .AllRounder {
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.Raiders .PlayerMain {
+  padding: 0 15px;
+  width: 32%;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.playerCard {
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: moveUp 0.5s ease-in-out forwards;
+}
+
+
+.playerCard .PlayerImage {
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  position: relative;
+  height: auto;
+  transform: scale(0.9);
+  transition: all 900ms ease-in;
+}
+
+
+.playerCard .playerImage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 9;
+  position: relative;
+}
+
+.playerCard .playerName {
+  position: relative;
+    margin-top: -25px;
+    z-index: 9;
+    text-align: center;
+    min-height: 105px;
+}
+
+.playerCard .playerName .firstName {
+  color: #000;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.playerCard .playerName .LastName {
+  color: #000;
+  font-weight: 600;
+    font-size: 35px;
+    margin: 0;
+    margin-top: -6px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+
+.playerCard .playerName .playerRole {
+  font-family: "Exo-Regular";
+  color: #ff7500;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: all .5s ease-in;
+  text-transform:capitalize ;
+}
+
+@media screen and (max-width:1200px) {
+  .RaiderSection .RaidersContainer .Raiders ,.DefenderSection .DefenderContainer .Defender , .AllSection .AllContainer .AllRounder {
+    margin: 0 100px;
+  }
+
+  .rowCon {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .RaiderSection .RaidersContainer .Raiders , .DefenderSection .DefenderContainer .Defender , .AllSection .AllContainer .AllRounder{
+    margin: auto;
+  }
+}
+
+@media Screen and (max-width:767px) {
+  .RaiderSection .RaidersContainer .Raiders , .DefenderSection .DefenderContainer .Defender , .AllSection .AllContainer .AllRounder {
+    justify-content: center;
+  }
+
+  .playerCard {
+    margin-bottom: 20px;
+  }
+}
+
+

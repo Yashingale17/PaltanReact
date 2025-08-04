@@ -1,0 +1,257 @@
+.GalleryBanner {
+  background: url('./galleryBanner1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  max-width: 100%;
+}
+
+.GalleryBanner .GalleryContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+}
+
+.GalleryContainer .bannerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+
+.GalleryContainer .bannerLeft .left {
+  position: relative;
+  margin-left: 33.33%;
+}
+
+.LeftContent img {
+  width: 100%;
+}
+
+.left .LeftContent .content h1 {
+  font-family: 'Love-nature';
+  color: white;
+  font-size: 120px;
+  top: 28%;
+  letter-spacing: 13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: -2px 0 24px #000;
+}
+
+.GalleryContainer .bannerRight {
+  width: 50%;
+}
+
+.bannerRight .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerRight .RightContent {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bannerLeft .left .LeftContent .content img {
+  position: relative;
+  top: 52px;
+}
+
+.seasons {
+  padding: 80px 0;
+}
+
+.seasons ul li {
+  background-color: #f40;
+  transition: all .5s ease-in;
+  letter-spacing: 3px;
+  padding: 15px 20px;
+  transform: skew(-15deg);
+  color: white;
+  font-size: 18px;
+  font-family: "Exo", serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.SeasonContiner .SeasonContent {
+  max-width: 1170px;
+}
+
+.SeasonContent .content {
+  background-color: green;
+}
+
+.titles h3 {
+  background-color: #f40;
+  position: relative;
+  padding: 7px 50px;
+  margin-left: -12px;
+  width: 90%;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  display: -webkit-box;
+  line-height: 1.3;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  height: 3em;
+  transform: skew(-15deg);
+  letter-spacing: 3px;
+}
+
+.titles h3::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  right: 6px;
+  top: 0;
+  width: 10px;
+  height: 54px !important;
+  box-shadow: -20px 0 0 0 #fff;
+}
+
+.titles h3::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 22px;
+  height: 54px !important;
+  transform: skew(15deg);
+}
+
+/* */
+
+
+@media screen and (max-width:992px) {
+  .seasonContentBox .img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:481px) {
+  .titles h3 {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 30px;
+  }
+}
+
+
+
+@media screen and (min-width:767px) and (max-width:1198px) {
+  .GalleryBanner .GalleryContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .GalleryContainer .bannerLeft {
+    width: 100%;
+    height: 350px;
+  }
+
+  .left .LeftContent .content h1 {
+    left: 50%;
+  }
+
+  .GalleryContainer .bannerLeft .left {
+    top: 30px;
+    margin-left: 0%;
+  }
+
+  .LeftContent .content img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .RightContent .content img {
+    height: 350px;
+  }
+
+  .GalleryContainer .bannerRight {
+    height: 350px;
+    width: 100%;
+  }
+
+  .bannerRight .RightContent {
+    height: 100%;
+  }
+}
+
+/* @media screen and (min-width:700px) and (max-width:767px) {
+
+  .GalleryBanner {
+    background-position: right;
+  }
+
+  .GalleryBanner .GalleryContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .GalleryContainer .bannerLeft {
+    width: 100%;
+    height: 200px;
+  }
+
+  .GalleryContainer .bannerLeft .left {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .GalleryContainer .bannerRight {
+    height: 500px;
+    width: 100%;
+  }
+
+  .bannerLeft .left .LeftContent .content h1 {
+    left: 25%;
+  }
+
+
+  .bannerLeft .left .LeftContent .content img {
+    display: none;
+  }
+
+
+  .bannerRight .RightContent {
+    height: 100%;
+  }
+
+  .RightContent .content img {
+    height: 500px;
+  }
+} */
+
+@media screen and (max-width:767px) {
+  .GalleryBanner {
+    background: url('./galleryReImg1.jpg');
+    height: 600px;
+    background-position: center;
+  }
+
+  .bannerRight,
+  .bannerLeft .left .LeftContent .content img,
+  .playerAnime {
+    display: none;
+  }
+}

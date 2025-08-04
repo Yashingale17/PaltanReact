@@ -1,0 +1,179 @@
+.SinglePlayerCoro {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+.SinglePlayerCoro .OtherPlayers h2 {
+  text-align: center;
+  line-height: 1;
+  color: #ff7500;
+  background: linear-gradient(#ff7500, #ff7500, #ff7500, rgba(0, 0, 0, 0.71));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+  font-family: "Love-nature";
+  font-size: 110px !important;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.coroContent {
+  background-color: black;
+  transform: skew(-5deg);
+  margin-top: -25px;
+  display: flex;
+}
+
+.Corousel {
+  display: flex;
+  color: white;
+  width: 100%;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.Corousel a {
+  width: 50%;
+}
+
+.Corousel .PlayerDetail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 2px;
+}
+
+.Active {
+  box-shadow: -50px 0 100px #141616;
+}
+
+.Corousel .Image {
+  width: 50%;
+}
+
+.Image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Fname {
+  font-family: "Exo";
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.Sname {
+  font-family: "Exo";
+  color: white;
+  font-size: 34px;
+  margin: 0;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: -7px;
+}
+
+.Position {
+  font-family: "Exo";
+  color: #ff7500;
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all .5s ease-in;
+}
+
+.NameDetail {
+  width: 50%;
+  text-align: center;
+}
+
+.navButton {
+  background-color: #f40;
+  padding: 12px 30px;
+  border-radius: 25px;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.navButton1 {
+  background-color: #f40;
+  padding: 12px 30px;
+  border-radius: 25px;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .SinglePlayerCoro .OtherPlayers h2 {
+    font-size: 100px !important;
+  }
+
+  .Corousel a {
+    width: 100%;
+  }
+  
+  .coroContent {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .Corousel a {
+    width: 100%;
+  }
+  .SinglePlayerCoro .OtherPlayers h2 {
+    font-size: 80px !important;
+  }
+  .coroContent {
+    transform: skew(0deg);
+    margin-top: -15px;
+  }
+  
+  
+  .PlayerDetail {
+    margin-top: 40px !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .SinglePlayerCoro .OtherPlayers h2 {
+    font-size: 50px !important;
+    line-height: 0.9;
+  }
+  .Corousel a {
+    width: 100%;
+  }
+  .coroContent {
+    transform: skew(0deg);
+    margin-top: -8px;
+  }
+  .NameDetail {
+    width: 100%;
+    text-align: left;
+  }
+
+  .PlayerDetail {
+    flex-direction: column;
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Corousel .activeA {
+    display: none;
+  }
+}

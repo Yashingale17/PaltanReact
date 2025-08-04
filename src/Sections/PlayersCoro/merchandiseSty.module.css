@@ -1,0 +1,172 @@
+.merchandiseTicketSction {
+  padding: 100px 0;
+  overflow-x: clip;
+}
+
+.merchandiseTicketSction .Container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.merchandiseTicketSction .Container .ContentContainer {
+  height: 400px;
+  width: 100%;
+  margin-bottom: -23%;
+  position: relative;
+  z-index: 99;
+  transform: skew(-15deg);
+}
+
+.merchandiseTicketSction .Container .ContentContainer .left {
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+  background-color: #2b2521;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.15), 0 0 26px rgba(0, 0, 0, 0.63);
+}
+
+.merchandiseTicketSction .Container .ContentContainer .right {
+  width: 50%;
+  height: 100%;
+  margin-left: -5px;
+  display: inline-block;
+  background-color: #000;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.15), 0 0 26px rgba(0, 0, 0, 0.63);
+}
+
+.merchandiseTicketSction .Container .ContentContainer .left .MImage,
+.merchandiseTicketSction .Container .ContentContainer .right img {
+  transform: skew(15deg);
+}
+
+.merchandiseTicketSction .Container .ContentContainer .left .MImage {
+  position: relative;
+  top: 25px;
+}
+
+.merchandiseTicketSction .Container .ContentContainer .right img {
+  margin: 0 auto;
+  top: 15%;
+  position: relative;
+}
+
+.BuyTicket {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 31%;
+}
+
+.BuyTicket button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff7500;
+  border: 2px solid #fff;
+  opacity: .9;
+  width: 225px;
+  border-left: none;
+  padding: 8px 30px;
+  border-radius: 0;
+  font-size: 20px;
+  color: white;
+  font-family: "Exo";
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+  .merchandiseTicketSction .Container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+  .merchandiseTicketSction .Container {
+    width: 750px;
+  }
+  .BuyTicket {
+    top: 29%;
+    left: 31%;
+  }
+
+  .BuyTicket button {
+    width: 160px;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .merchandiseTicketSction .Container .ContentContainer {
+    transform: skew(0deg);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer .left .MImage,
+  .merchandiseTicketSction .Container .ContentContainer .right img {
+    transform: skew(0deg);
+  }
+
+  .merchandiseTicketSction .Container {
+    width: 83%;
+    margin: 0 20px;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer .left {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin-left: 7px;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer .right {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #000;
+    margin-left: 22px;
+    padding: 30px;
+  }
+
+  .BuyTicket button {
+    position: relative;
+    top: 63px;
+    left: -95px;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer .right img {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+  .merchandiseTicketSction {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .merchandiseTicketSction {
+    padding: 20px 0;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer {
+    margin-bottom: -28%;
+  }
+
+
+  .merchandiseTicketSction .Container .ContentContainer .left {
+    width: 45%;
+    height: 70%;
+    margin-left: 20px;
+  }
+
+  .merchandiseTicketSction .Container .ContentContainer .right {
+    width: 45%;
+    height: 70%;
+  }
+}

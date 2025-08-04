@@ -1,0 +1,60 @@
+.PaltanWorldContainer {
+  overflow: hidden;
+}
+.Banner2 {
+  display: none;
+}
+
+.PaltanWorldContent .World {
+  height: 670px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.PaltanWorldContent .World .outer {
+  display: table;
+  height: 670px;
+  width: 100%;
+}
+
+.PaltanWorldContent .World .outer .inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.PaltanWorldContent .World .outer .inner h3 {
+  font-family: "Love-Nature";
+  font-size: 70px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+
+
+@media screen and (max-width:767px) {
+  .Banner1 {
+    display: none;
+  }
+
+  .Banner2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .PaltanWorldContent {
+    flex-direction: column;
+  }
+
+  .PaltanWorldContent .WorldLink {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .PaltanWorldContent .World .outer .inner h3 {
+    font-size: 45px;
+  }
+}

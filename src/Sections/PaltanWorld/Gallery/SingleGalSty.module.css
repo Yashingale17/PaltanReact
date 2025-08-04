@@ -1,0 +1,65 @@
+.ImagesSection {
+  padding: 50px 0 !important;
+}
+
+.ImagesSection .imagesContainer {
+  max-width: 1170px;
+}
+
+.ImagesMain {
+  max-width: 66em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ImagesSection h3 {
+  font-family: 'Love-nature';
+  font-size: 50px;
+  color: #f40;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.imageItem {
+  position: relative;
+  overflow: hidden; 
+}
+
+.image {
+  width: 100%; 
+  height: 300px;
+  object-fit: cover; 
+  object-position: center;
+}
+
+
+@keyframes flip {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.hangingImage {
+  transform-style: preserve-3d;
+  animation: flip 1s ease-in-out forwards;
+  transform-origin: 0 0;
+}
+
+@media screen and (max-width:991px) {
+  .imagesContainer {
+    padding: 0;
+  }
+}
+@media screen and (max-width:576px) {
+  .imagesContainer {
+    padding: 0;
+  }
+}

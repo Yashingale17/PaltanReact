@@ -1,0 +1,26 @@
+
+
+.Container h5 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f40;
+  color: white;
+  width: 200px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 10px 0;
+  margin: auto;
+  transform: skew(-15deg);
+}
+.Container h6 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 25px;
+  color: #000;
+  line-height: 110%;
+  /* margin: .5rem 0 .4rem 0; */
+}

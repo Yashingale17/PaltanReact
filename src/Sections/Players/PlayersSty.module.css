@@ -1,0 +1,203 @@
+
+.PlayerBanner {
+  background: url('./PlayersBg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  max-width: 100%;
+}
+
+.PlayerBanner .bannerContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+}
+
+.bannerContainer .bannerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+
+.bannerContainer .bannerLeft .left {
+  position: relative;
+  margin-left: 33.33%;
+}
+
+.LeftContent img {
+  width: 100% ;
+}
+
+.left .LeftContent .content h1 {
+  position: absolute;
+  font-size: 80px;
+  top: 21%;
+  left: 1%;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: white;
+  text-shadow: -2px 0 24px #000;
+  margin: 2.1rem 0 1.68rem 0;
+  /* overflow: hidden; */
+}
+
+.bannerContainer .bannerRight {
+  width: 50%;
+}
+
+.bannerRight .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerRight .RightContent {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes movedown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.playerAnime {
+  animation: movedown 1s ease-in-out;
+}
+
+.playerAnime {
+  animation: movedown 1s ease-in-out;
+}
+
+.moveUpAnimation {
+  animation: moveUp 1s ease-in-out;
+}
+
+@media screen and (min-width:767px) and (max-width:1198px)  {
+  .PlayerBanner .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bannerContainer .bannerLeft {
+    width: 100%;
+    height: 250px;
+  }
+
+  .left .LeftContent .content h1 {
+    left: 2%;
+  }
+  
+  .bannerContainer .bannerLeft .left {
+    top: 30px;
+    margin-left: 0%;
+  }
+
+  .LeftContent .content img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .RightContent .content img {
+    height: 450px;
+  }
+  
+  .bannerContainer .bannerRight {
+    height: 450px;
+    width: 100%;
+  }
+
+  .bannerRight .RightContent {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width:767px) {
+
+  .PlayerBanner {
+    background-position:right;
+  }
+
+  .PlayerBanner .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bannerContainer .bannerLeft {
+    width: 100%;
+    /* background-color: green; */
+    height: 200px;
+  }
+
+  .bannerContainer .bannerLeft .left {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  
+   .bannerContainer .bannerRight {
+    height: 500px;
+    width: 100%;
+  }
+
+  .bannerLeft .left .LeftContent .content h1 {
+    left: 25%;
+  }
+
+
+  .bannerLeft .left .LeftContent .content img {
+    display: none;
+  }
+
+
+  .bannerRight .RightContent {
+    height: 100%;
+  }
+
+  .RightContent .content img {
+    /* width: 100%; */
+    /* height: 50%; */
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .PlayerBanner {
+    background: url('./SecongBgPlayers1.jpg');
+    background-position: 50%;
+    height: 600px;
+    position: relative;
+    max-width: 100%;
+  }
+
+ .PlayerBanner .bannerContainer  {
+  display: none;
+ }
+}

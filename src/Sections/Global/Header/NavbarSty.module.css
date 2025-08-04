@@ -1,0 +1,284 @@
+.Container {
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  z-index: 999;
+  transition: transform 0.7s ease-in-out;
+}
+
+.Container .ContentContainer {
+  background-color: #0000004d;
+  height: 100px;
+  position: relative;
+  width: 90%;
+  z-index: 9999;
+  margin: 0 auto;
+  background-image: none;
+  border: 0;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  transform: skew(-15deg);
+  padding: 0 15px;
+}
+
+.ContentContainer .NavBar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.ContentContainer .NavBar::before {
+  content: '';
+  background: linear-gradient(to right, black 0%, white 50%, black 100%);
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 2px;
+  right: 4px;
+  animation: blinker 3s linear infinite;
+}
+
+.ContentContainer .NavBar::after {
+  content: '';
+  background: linear-gradient(to right, black 0%, white 50%, black 100%);
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  height: 1px;
+  left: 15%;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: .2;
+}
+50% {
+    opacity: .5;
+}
+100% {
+    opacity: 1;
+}
+
+}
+
+.NavBar .Logo {
+  float: left;
+  height: 100px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 30px;
+  transform: skew(18deg);
+  z-index: 99;
+  position: relative;
+}
+
+@media (max-width:450px) {
+  .NavBar .Logo img {
+    width: 56% !important;
+    margin-top: -10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ContentContainer .NavBar {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .Container .ContentContainer {
+    width: 94%;
+    height: 60px;
+    padding: 0;
+    padding-right: 5px;
+  }
+
+  .ContentContainer .NavBar .Logo {
+    margin: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  
+  .Hamburger {
+    order: 2;
+  }
+  
+  
+  .NavBar .Logo img {
+    width: 70%;
+    margin-top: -22px;
+  }
+  
+  .NavLinks ul li a {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
+
+
+.Logo img {
+  margin-top: -37px;
+}
+
+.NavBar .NavLinks {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transform: skew(15deg) !important;
+}
+
+@media (max-width: 992px) {
+  
+  .Container .ContentContainer {
+    transform: skew(0deg);
+  }
+  .ContentContainer .NavBar {
+    display: flex;
+    justify-content: left;
+  }
+  .ContentContainer .NavBar .Logo {
+    transform: skew(0deg);
+  }
+
+  .NavBar .NavLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #000;
+    min-height: 320px;
+    padding: 20px 0;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden; 
+    transition: opacity 0.3s ease-in, max-height 0.5s ease-out, visibility 0s 0.5s;
+    transform: skew(0deg) !important;
+  }
+
+  .NavBar .NavLinks.ShowMenu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 320px; 
+    transition: opacity 0.3s ease-in, max-height 0.5s ease-out, visibility 0s 0s; 
+  }
+}
+
+
+.NavLinks ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NavLinks ul li {
+  list-style: none;
+}
+
+.NavLinks ul li a {
+  text-decoration: none;
+  padding: 15px 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-style: italic;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.NavLinks ul li a:hover {
+  color: #d96600;
+}
+
+.Active {
+  color: #ff7500 !important;
+}
+
+.Hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  display: none;
+}
+
+.Bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.Bar1 {
+  width: 100%;
+}
+.Bar2 {
+  width: 80%;
+}
+.Bar3 {
+  width: 60%;
+}
+
+.Open .Bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+  background-color: #d96600;
+}
+
+.Open .Bar:nth-child(2) {
+  opacity: 0;
+}
+
+.Open .Bar:nth-child(3) {
+  width: 100%;
+  transform: translateY(-11px) rotate(-45deg);
+  background-color:#ff7500;
+}
+
+@media (max-width:1199px) {
+  .NavLinks ul li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .NavLinks ul {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .NavLinks ul li {
+    width: 100%;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .NavLinks ul li a {
+    font-size: 15px;
+  }
+}
+
+.Hidden {
+  transform: translateY(-200%);
+}
+
